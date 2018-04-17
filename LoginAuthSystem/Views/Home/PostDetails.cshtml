@@ -1,0 +1,67 @@
+﻿@model LoginAuthSystem.Models.PostSetup
+
+@{
+    ViewBag.Title = "Post Detail";
+}
+
+<ol class="breadcrumb">
+    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li><a href="@Url.Action("Posts", "Home")">News</a></li>
+    <li class="active">@ViewBag.Title</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading main-color-bg">
+                <h3 class="panel-title">Post Details</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <h2>@Html.DisplayFor(model => model.Title)</h2>
+                    <p>
+                        <img src="@Url.Content(Model.PicPath)" alt="News Image" class="img-responsive" style="float:left; margin-right:15px;" />
+                        @*@Html.DisplayFor(model => model.DateAdded)*@
+                        @Convert.ToDateTime(Model.DateAdded).ToString("dd/MM/yyyy")
+                        <br />
+                        <div>
+                            @Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.Description))
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        @*<div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                    <h3 class="panel-title">Announcements</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td colspan="2">
+                                    <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="@Url.Content(item.PicPath)" alt="News Image" height="85" width="85" />
+                                </td>
+                                <td>
+                                    <div style="min-height:80px; overflow:hidden;">
+                                        @Html.Raw(System.Web.HttpUtility.HtmlDecode(item.Summary))...
+                                    </div>
+                                    <a href="@Url.Action("NewsDetail","Home", new { @id = item.ID })">Read More...</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+
+            </div>*@
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAuthSystem", "LoginAuthSystem\LoginAuthSystem.csproj", "{7703F307-C834-4C4C-B68C-EC8DB8B1D09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7703F307-C834-4C4C-B68C-EC8DB8B1D09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7703F307-C834-4C4C-B68C-EC8DB8B1D09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7703F307-C834-4C4C-B68C-EC8DB8B1D09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7703F307-C834-4C4C-B68C-EC8DB8B1D09C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A0F030C-41EB-4320-8954-3DE77C7AE9F9}
+	EndGlobalSection
+EndGlobal

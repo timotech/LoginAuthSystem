@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<section>
+    <div class="row">
+        <div class="poplinks">
+            <div class="pop-populate">
+                <a href="@Url.Action("Admissions", "Utilities")" class="pop-link">
+                    <span class="glyphicon glyphicon-education pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Admissions</span>
+                </a>
+                <a href="@Url.Action("History", "Home")" class="pop-link">
+                    <span class="glyphicon glyphicon-tags pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">History</span>
+                </a>
+                <a href="@Url.Action("EventCalendar", "Home")" class="pop-link">
+                    <span class="glyphicon glyphicon-calendar pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Calendar</span>
+                </a>
+                <a href="#" class="pop-link">
+                    <span class="glyphicon glyphicon-apple pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Blog</span>
+                </a>
+                <a href="@Url.Action("News", "Home")" class="pop-link">
+                    <span class="glyphicon glyphicon-exclamation-sign pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Information</span>
+                </a>
+                <a href="@Url.Action("Gallery", "Home")" class="pop-link">
+                    <span class="glyphicon glyphicon-camera pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Gallery</span>
+                </a>
+                <a href="@Url.Action("Contact", "Home")" class="pop-link">
+                    <span class="glyphicon glyphicon-envelope pop-icons" aria-hidden="true"></span>
+                    <span class="pop-text">Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

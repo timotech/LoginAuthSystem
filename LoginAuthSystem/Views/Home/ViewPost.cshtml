@@ -1,0 +1,64 @@
+﻿@model IEnumerable<LoginAuthSystem.Models.PostSetup>
+
+@{
+    ViewBag.Title = "Posts";
+}
+
+<ol class="breadcrumb">
+    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+    <li class="active">@ViewBag.Title</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading main-color-bg">
+                <h3 class="panel-title">Posts</h3>
+            </div>
+            <div class="panel-body">
+                <h2>Current Posts</h2>
+
+                <table class="table">
+                    @*<tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Title)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Description)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PicPath)
+                            </th>
+                            <th></th>
+                        </tr>*@
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>
+                                        <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
+                                    </p>
+                                    <div style="float:left; width:30%; height:180px;">
+                                        <img src="@Url.Content(item.PicPath)" alt="News Image" height="150" width="150" />
+                                    </div>
+                                    <div style="float:right; width:70%; min-height:180px;">
+                                        @Html.Raw(System.Web.HttpUtility.HtmlDecode(item.Summary))
+                                    </div>
+                                    <p style="clear:both; margin-left:30%;">
+                                        <a href="@Url.Action("PostDetails","Home", new { @id = item.ID })" class="btn btn-success" style="border-radius:0;">Read More...</a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 adjustpic">
+        <img src="~/Images/NewsSection.png" class="img-responsive" />
+    </div>
+</div>
