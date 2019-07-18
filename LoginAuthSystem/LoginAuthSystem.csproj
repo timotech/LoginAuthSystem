@@ -202,6 +202,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PostDelete.cs" />
     <Compile Include="Models\PostSetup.cs" />
     <Compile Include="Models\RolesModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -316,6 +317,7 @@
     <Content Include="Views\Admin\View.cshtml" />
     <Content Include="Views\Home\ViewPost.cshtml" />
     <Content Include="Views\Home\PostDetails.cshtml" />
+    <Content Include="Views\Home\DeletePost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

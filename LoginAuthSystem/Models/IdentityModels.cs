@@ -31,5 +31,7 @@ namespace LoginAuthSystem.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<LoginAuthSystem.Models.PostDelete> PostDeletes { get; set; }
     }
 }
