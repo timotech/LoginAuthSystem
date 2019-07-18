@@ -36,5 +36,10 @@ namespace LoginAuthSystem.Controllers
         {
             return View();
         }
+
+        public ActionResult DeletePost()
+        {
+            return View();
+        }
     }
 }
